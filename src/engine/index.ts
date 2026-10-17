@@ -4,3 +4,10 @@
  */
 
 export const ENGINE_VERSION = '0.1.0';
+
+// Core domain types
+export * from './types';
+
+// Constants & Initial data catalogues
+export * from './data/units';
+export * from './data/provinces';
