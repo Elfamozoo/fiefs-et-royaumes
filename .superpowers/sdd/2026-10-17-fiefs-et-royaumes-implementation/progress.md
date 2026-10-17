@@ -16,3 +16,5 @@ Plan scan clean: no contradictions found. Ready for Task 1 dispatch.
 
 Task 1: complete (commits f7903b7..5e16200, review clean)
 Task 1: minor (deferred): add bare path alias to tsconfig.json and add ~$* to .gitignore
+
+Task 2: complete (commits fcab265..fa02958, review clean)
