@@ -109,6 +109,7 @@ export interface MarketCommodity {
   priceHistory: number[];
   monthlySupply: number;
   monthlyDemand: number;
+  liquidity?: number;
 }
 
 export interface BattleReport {
@@ -177,6 +178,7 @@ export interface TradeResult {
   totalCost: number;
   newPrice: number;
   message: string;
+  state?: GameState;
 }
 
 export type Result<T> =
