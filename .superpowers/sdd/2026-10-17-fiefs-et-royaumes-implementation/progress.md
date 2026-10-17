@@ -13,3 +13,6 @@
 | Task 9 & 10 | Views & store -> save/load & integration tests | Compatible. 100% full campaign tested. |
 
 Plan scan clean: no contradictions found. Ready for Task 1 dispatch.
+
+Task 1: complete (commits f7903b7..5e16200, review clean)
+Task 1: minor (deferred): add bare path alias to tsconfig.json and add ~$* to .gitignore
