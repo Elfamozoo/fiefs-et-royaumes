@@ -16,3 +16,5 @@ export * from './data/provinces';
 export * from './systems/time';
 export * from './systems/economy';
 export * from './systems/market';
+export * from './systems/military';
+export * from './systems/battle';
