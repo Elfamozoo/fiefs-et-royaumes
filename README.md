@@ -21,7 +21,7 @@ Le jeu est compilé en un unique fichier exécutable directement dans n'importe 
 3. Le jeu s'ouvre dans votre navigateur web, **100% hors-ligne**, sans serveur ni dépendances !
 
 ### Option 2 : En ligne via GitHub Pages
-Rendez-vous sur [les paramètres de votre dépôt GitHub](https://github.com/Elfamozoo/fiefs-et-royaumes/settings/pages) pour activer GitHub Pages en deux clics.
+
 
 ---
 
