@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { GameState, SpyMissionType, SpyResult } from '../../engine/types';
 import { ParchmentCard } from '../components/ParchmentCard';
 import { WaxSealButton } from '../components/WaxSealButton';
-import { Eye, Shield, Flame, Skull, AlertCircle, CheckCircle2, XCircle } from 'lucide-react';
+import { Eye, Shield, Flame, Skull, CheckCircle2, XCircle } from 'lucide-react';
 
 interface EspionageViewProps {
   state: GameState;
@@ -174,7 +174,7 @@ export const EspionageView: React.FC<EspionageViewProps> = ({ state, onLaunchMis
               </div>
 
               {/* Intel Payload if any */}
-              {lastResult.intel && (
+              {Boolean(lastResult.intel) && (
                 <div className="bg-parchment-50 p-3 rounded border border-parchment-border text-xs space-y-2">
                   <div className="font-bold text-iron-grey-800 uppercase tracking-wider text-[10px]">
                     Renseignements Dérobés

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import type { GameState, Province, Army } from '../../engine/types';
+import type { GameState } from '../../engine/types';
 import { ParchmentCard } from '../components/ParchmentCard';
-import { HeraldicShield } from '../components/HeraldicShield';
 import { WaxSealButton } from '../components/WaxSealButton';
-import { Shield, Users, Castle, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface RealmMapViewProps {
   state: GameState;
@@ -30,11 +29,6 @@ export const RealmMapView: React.FC<RealmMapViewProps> = ({ state, onMoveArmy })
   // Armies stationed in selected province
   const stationedArmies = Object.values(state.armies).filter(
     a => a.provinceId === selectedProvinceId
-  );
-
-  // Player armies that can move
-  const playerStationedArmies = stationedArmies.filter(
-    a => a.lordId === state.playerLordId
   );
 
   return (
@@ -80,7 +74,6 @@ export const RealmMapView: React.FC<RealmMapViewProps> = ({ state, onMoveArmy })
               {Object.values(state.provinces).map(prov => {
                 const isSelected = prov.id === selectedProvinceId;
                 const isConnectedToSelected = selectedProvince?.connections.includes(prov.id);
-                const owner = prov.lordId ? state.lords[prov.lordId] : null;
                 const isPlayer = prov.lordId === state.playerLordId;
                 const hasArmy = Object.values(state.armies).some(a => a.provinceId === prov.id);
 

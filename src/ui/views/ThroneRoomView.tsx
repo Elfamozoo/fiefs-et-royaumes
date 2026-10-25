@@ -2,7 +2,7 @@ import React from 'react';
 import type { GameState } from '../../engine/types';
 import { ParchmentCard } from '../components/ParchmentCard';
 import { HeraldicShield } from '../components/HeraldicShield';
-import { Crown, Shield, Scroll, TrendingUp, Users, AlertTriangle } from 'lucide-react';
+import { Crown, Scroll } from 'lucide-react';
 
 interface ThroneRoomViewProps {
   state: GameState;

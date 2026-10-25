@@ -12,8 +12,6 @@
 
 import type {
   GameState,
-  Lord,
-  Province,
   SpyMissionType,
   SpyResult,
 } from '../types';

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { WaxSealButton } from './WaxSealButton';
-import { Play, Pause, FastForward, ChevronRight } from 'lucide-react';
+import { Play, Pause, ChevronRight } from 'lucide-react';
 
 interface TimeControllerProps {
   onAdvanceMonth: () => void;

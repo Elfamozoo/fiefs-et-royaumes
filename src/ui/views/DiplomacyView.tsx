@@ -3,7 +3,7 @@ import type { GameState } from '../../engine/types';
 import { ParchmentCard } from '../components/ParchmentCard';
 import { WaxSealButton } from '../components/WaxSealButton';
 import { HeraldicShield } from '../components/HeraldicShield';
-import { Send, MessageSquare, Crown, Shield, Scroll } from 'lucide-react';
+import { Send, MessageSquare } from 'lucide-react';
 
 interface DiplomacyViewProps {
   state: GameState;
@@ -73,7 +73,15 @@ export const DiplomacyView: React.FC<DiplomacyViewProps> = ({
                       ) : isPlayerVassal ? (
                         <span className="text-royal-blue font-bold">Votre suzerain</span>
                       ) : (
-                        <span className="text-iron-grey-500">Indépendant</span>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onSwearFealty(lord.id);
+                          }}
+                          className="text-[11px] text-royal-gold-700 hover:underline font-bold"
+                        >
+                          Prêter hommage
+                        </button>
                       )}
                     </div>
                   </div>

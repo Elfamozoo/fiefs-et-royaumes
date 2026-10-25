@@ -4,7 +4,7 @@ import { UNIT_CATALOGUE } from '../../engine/data/units';
 import { ParchmentCard } from '../components/ParchmentCard';
 import { WaxSealButton } from '../components/WaxSealButton';
 import { MedievalModal } from '../components/MedievalModal';
-import { Shield, Swords, Crosshair, Horse, Sparkles, Axe, Coins, Zap } from 'lucide-react';
+import { Swords, Crosshair, Flag, Sparkles, Axe } from 'lucide-react';
 
 interface MilitaryViewProps {
   state: GameState;
@@ -14,7 +14,7 @@ interface MilitaryViewProps {
 const FAMILY_ICONS: Record<UnitFamily, React.ReactNode> = {
   infantry: <Swords className="w-4 h-4 text-iron-grey-700" />,
   ranged: <Crosshair className="w-4 h-4 text-emerald-700" />,
-  cavalry: <Horse className="w-4 h-4 text-amber-700" />,
+  cavalry: <Flag className="w-4 h-4 text-amber-700" />,
   exotic: <Sparkles className="w-4 h-4 text-purple-700" />,
   siege: <Axe className="w-4 h-4 text-crimson-700" />,
 };

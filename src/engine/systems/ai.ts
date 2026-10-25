@@ -8,10 +8,10 @@
  * - 'traditionalist': Fiscal conservatism, food stocking, high citizen morale
  */
 
-import type { GameState, Lord, Province, ResourceType } from '../types';
+import type { GameState } from '../types';
 import { recruitRegiment } from './military';
 import { executeMarketTrade } from './market';
-import { sendPigeonMessage, postPublicRumor } from './diplomacy';
+import { postPublicRumor } from './diplomacy';
 import { launchSpyMission } from './espionage';
 
 export function simulateAITurns(state: GameState): GameState {
@@ -76,7 +76,6 @@ export function simulateAITurns(state: GameState): GameState {
 
       case 'diplomat': {
         // Post occasional rumor or dispatch an infiltration mission
-        const targetProvince = ownedProvinces[0];
         const rumorRes = postPublicRumor(
           currentState,
           lord.id,

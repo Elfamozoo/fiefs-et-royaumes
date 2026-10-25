@@ -3,8 +3,6 @@ import type { GameState, Lord, Province } from '../../types';
 import {
   processEconomy,
   setProvinceTaxRate,
-  BIOME_BASE_YIELDS,
-  TAX_RATES_CONFIG,
 } from '../economy';
 
 function createMockLord(overrides: Partial<Lord> = {}): Lord {

@@ -11,7 +11,7 @@
  * - Province battle resolutions
  */
 
-import type { Army, GameState, Lord, Province, ResourceType } from './types';
+import type { Army, GameState, Lord, Province } from './types';
 import { INITIAL_PROVINCES } from './data/provinces';
 import { advanceMonth } from './systems/time';
 import { processEconomy } from './systems/economy';

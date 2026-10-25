@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import type { GameState, Lord, Province } from '../../types';
+import type { GameState, Lord } from '../../types';
 import {
   swearFealty,
   releaseVassal,

@@ -1,9 +1,8 @@
 import React from 'react';
-import type { GameState, TaxRate, Province } from '../../engine/types';
+import type { GameState, TaxRate } from '../../engine/types';
 import { ParchmentCard } from '../components/ParchmentCard';
-import { WaxSealButton } from '../components/WaxSealButton';
 import { TAX_RATES_CONFIG } from '../../engine/systems/economy';
-import { Coins, Heart, Users, ShieldAlert, Hammer } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 interface FiefsViewProps {
   state: GameState;
